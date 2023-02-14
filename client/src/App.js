@@ -3,11 +3,11 @@ import { Container, Row, Col, Image, Button, Form, Navbar, Nav } from 'react-boo
 import api from "./api";
 import { FaCameraRetro } from 'react-icons/fa';
 const App = () => {
-  const [title, setTitle] = useState("James Smith");
+  const [title, setTitle] = useState("Shreya Lethakula");
   const [description, setDescription] = useState(
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin, tellus non congue commodo, libero sapien faucibus libero, eu egestas lacus magna id ligula. Aliquam erat volutpat. Nulla vel velit vel nibh rutrum luctus. Nunc malesuada nulla a diam laoreet, in aliquet metus suscipit."
+    "Im shreya reddy lethakula currently doing master in computer science.  Im shreya reddy lethakula currently doing master in computer science. Im shreya reddy lethakula currently doing master in computer science.Im shreya reddy lethakula currently doing master in computer science.Im shreya reddy lethakula currently doing master in computer science.Im shreya reddy lethakula currently doing master in computer science.Im shreya reddy lethakula currently doing master in computer science."
   );
-  const [imageSrc, setImageSrc] = useState("https://via.placeholder.com/300x200");
+  const [imageSrc, setImageSrc] = useState("images/pic1.jpg");
   const [isEditing, setIsEditing] = useState(false);
   const [firstNumber, setFirstNumber] = useState(0);
   const [secondNumber, setSecondNumber] = useState(0);
@@ -21,9 +21,9 @@ const App = () => {
   const handleTitleChange = (event) => {
     setTitle(event.target.value);
   };
-  const handleImageChange = (event) => {
-    setImageSrc(event.target.value);
-  };
+  // const handleImageChange = (event) => {
+  //   setImageSrc(event.target.value);
+  // };
 
   const handleEditClick = () => {
     setIsEditing(true);
@@ -80,11 +80,12 @@ const App = () => {
         </Col>
         <Col md={6}>
           {isEditing ? (
-            <Form.Control
-              type="text"
-              value={imageSrc}
-              onChange={handleImageChange}
-            />
+            // <Form.Control
+            //   type="text"
+            //   value={imageSrc}
+            //   onChange={handleImageChange}
+            // />
+            <></>
           ) : (
             <Image src={imageSrc} fluid />
           )}
